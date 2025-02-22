@@ -780,12 +780,13 @@ config ARCH_IPQ40XX
 	select DM_GPIO
 	select DM_SERIAL
 	select DM_RESET
+	select DM_TIMER
 	select GPIO_EXTRA_HEADER
 	select PINCTRL
 	select CLK
 	select OF_CONTROL
-	select CLK_QCOM_IPQ4019
-	select PINCTRL_QCOM_IPQ4019
+	#select CLK_QCOM_IPQ4019
+	#select PINCTRL_QCOM_IPQ4019
 	imply CMD_DM
 	imply OF_UPSTREAM
 
