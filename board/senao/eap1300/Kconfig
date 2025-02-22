@@ -1,0 +1,12 @@
+if TARGET_SENAO_EAP1300
+
+config SYS_BOARD
+	default "eap1300"
+
+config SYS_VENDOR
+	default "senao"
+
+config SYS_CONFIG_NAME
+	default "senao-eap1300"
+
+endif

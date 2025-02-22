@@ -41,3 +41,9 @@ int __weak board_init(void)
 {
 	return 0;
 }
+
+int print_cpuinfo(void)
+{
+	printf("CPU:   Qualcomm IPQ40xx\n");
+	return 0;
+}

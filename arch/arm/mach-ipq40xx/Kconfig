@@ -12,4 +12,15 @@ config TEXT_BASE
 config NR_DRAM_BANKS
 	default 1
 
+choice
+	prompt "IPQ40xx board select"
+	optional
+
+config TARGET_SENAO_EAP1300
+	bool "Support Senao EAP1300 board"
+
+endchoice
+
+source "board/senao/eap1300/Kconfig"
+
 endif
